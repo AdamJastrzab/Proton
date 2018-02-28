@@ -1,0 +1,556 @@
+body {
+    margin: 0;
+}
+
+.nav-link {
+    font-weight: 650;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block; 
+}
+
+.navbar {
+    height: 80px;
+    background-color: rgb(0,26,63);
+   
+}
+
+.navbar-nav {
+    background-color: rgb(0,26,63);
+}  
+
+.menu-button {
+    color: white;
+}
+  
+.nav-item::after {
+    content: "";
+    position: absolute;
+    left:0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: #376891;
+    transition: width 0.75s ease-in-out;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+#nav-link-about, #nav-link-studio, #nav-link-gallery, #nav-link-filmography, #nav-link-contact  {
+    color:white;
+}
+
+
+.home {
+    background-color: rgb(0, 50, 101);
+    padding-bottom: 20px;
+}
+
+.home-wrapper {
+    padding-top: 100px;
+}
+
+.home-img, .about-img, .studio-img, .gallery-wspolpracownicy, .gallery-studio {
+    width: 100%;
+    height: auto;
+}
+
+.home-paragraph {
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    max-width: 600px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 550;
+}
+
+.about {
+    background-color: rgb(1, 69, 132);
+    padding-top: 30px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.about-headline, .studio-headline, .gallery-headline, .filmography-headline, .contact-headline {
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.about-ul {
+    margin-bottom: 0;
+}
+
+.firma-paragraph, .zalozyciel-paragraph, .zakres-paragraph {
+    font-weight: 550;
+    text-align: justify;
+}
+
+.zakres-paragraph {
+    margin: 0;
+}
+
+.profesjonalne-paragraph {
+    font-weight: 550;
+    padding-top: 20px;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.about-img {
+    max-width: 300px;
+}
+
+.studio {
+    background-color: rgb(0, 50, 101);
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: white;
+}
+
+.studio-img {
+    margin-bottom: 20px;
+}
+
+.studio-paragraph {
+    text-align: justify;
+    font-weight: 550;
+}
+
+.paragraph-even {
+    margin-top: -6px;
+}
+
+.studio-paragraph-pomieszczenia {
+    margin: 0;
+    font-weight: 550;
+}
+
+.studio-span {
+    color: red;
+}
+
+.gallery {
+    background-color: rgb(1, 69, 132);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.gallery-img {
+    max-width: 320px;
+    padding: 10px;
+    transition: transform 0.5s;
+    display: flex;
+}
+
+.gallery-img-wsp {
+    max-width: 320px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.gallery-center {
+    display: flex;
+    justify-content: center;   
+}
+
+.gallery-img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.gallery-part-title {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-part-title-wsp {
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.gallery-link {
+    color: rgb(146, 146, 146);
+}
+
+.gallery-link:link, .gallery-link:visited, .gallery-link:active {
+    text-decoration: none;
+}
+
+.gallery-link:hover {
+    color: rgb(121, 121, 121);
+}
+
+.signature {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.filmography {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: rgb(0, 50, 101);
+    color: white;
+}
+
+.filmography-title {
+    width: 750px;
+    height: 43px;
+    background:rgb(1, 69, 132);
+    border: 1px solid #CCCCCC;
+    display: block;
+}
+
+.filmography-krzysztof, .filmography-studio {
+    margin-bottom: 15px;
+    width: 750px;
+    display: block;
+}
+
+.filmography-studio {
+    margin-top: 15px;  
+}
+
+
+.filmography-ul-container {
+    width: 750px;
+}
+
+.filmography-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filmography-title:hover {
+background-color: rgb(9, 57, 102);
+cursor: pointer;
+}
+
+.filmography-title img{
+float: left;
+padding-left: 18px;
+padding-top: 17px;
+}
+
+.filmography-ul-container {
+display: block;
+max-width: 750px;
+padding: 10px 0;
+background-color: rgb(9, 57, 102);
+}
+
+.filmography-title .filmography-type { 
+display: block;
+color: #FFF;
+font-size: 17px;
+font-weight: bold;
+padding-left: 40px;
+margin-top: 10px;
+}
+
+.filmography-ul {
+    color: white;
+}
+
+.filmography-nomination {
+    color: red;
+}
+
+.filmography-studio-type {
+    color: blue;
+}
+
+.contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white; 
+    background-color: rgb(1, 69, 132);
+}
+
+.contact-map {
+    max-width: 500px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+
+.details-headline {
+    font-weight: 500;
+    margin: 0;
+}
+
+.details-data {
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 18px;
+}
+
+.contact-facebook {
+    width: 30px;
+    margin-top: 5px;
+    
+}
+
+.contact-facebook:hover {
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 50, 101);
+    font-size: 12px;   
+}
+
+.rights {
+    margin: 0;
+}
+
+
+
+@media (min-width: 992px) {
+    .contact-map {
+        height: 401px;
+    }
+}
+
+@media (min-width: 768px) {
+    .studio-img {
+        max-width: 600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+
+    .contact-map {
+        height: 332px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
+        width: 680px;
+    }    
+
+    .gallery-img, .gallery-img-wsp {
+        max-width: 250px;
+        
+    }
+    
+    .gallery-part-title {
+        max-width: 760px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about-img-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-ul {
+        padding-bottom: 20px;
+    }
+
+    .contact-details {
+        text-align: center;
+    }
+
+    .nav-item:hover::after {
+        width: 0;
+    }
+
+    .contact-facebook {
+        margin-left: 0;
+    }
+
+    .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
+        width: 525px;
+    } 
+    
+    .gallery-img, .gallery-img-wsp {
+        max-width: 500px;
+    }
+    
+    .gallery-center {
+        flex-direction: column;
+        
+    }
+    
+    .gallery-column {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .gallery-part-title {
+        max-width: 480px;
+    }
+
+    #navbar-fullwidth {
+        width: 100%;
+    }
+
+    #navbar-padding {
+        padding: 0;
+        margin: 0;  
+    }
+
+    .nav-link {
+       margin-left: 20px;
+    }
+
+    #logo {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+
+    #navbar-button {
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    #logo {
+        margin-right: 65px;
+        width: 200px;
+    }
+
+    .home-paragraph {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
+        width: 450px;
+    }  
+
+    .gallery-img {
+        max-width: 400px;
+        padding: 8px;
+    }
+
+    .gallery-img-wsp {
+        max-width: 400px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+    }
+    
+    .gallery-part-title {
+        max-width: 380px;
+    }
+
+}
+
+@media (max-width: 475px) {
+    .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
+        width: 400px;
+    }  
+
+}
+
+@media (max-width: 430px) {
+    .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
+        width: 350px;   
+    }  
+
+    .gallery-img {
+        max-width: 330px;
+        padding: 6px;
+    }
+
+    .gallery-img-wsp {
+        max-width: 330px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 6px;
+    }
+
+    .gallery-part-title {
+        max-width: 310px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .contact-map {
+        height: 280px;
+    }
+}
+
+@media (max-width: 375px) {
+        .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
+            width: 300px;
+        }  
+}
+
+
+
+@media (max-width: 342px) {
+    .contact-map {
+        height: 240px;
+    }
+
+    .contact-details {
+        font-size: 85%;   
+    }
+
+    .contact-facebook {
+        width: 40px;
+    }
+
+    .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
+        width: 270px;
+    } 
+    
+    .gallery-img {
+        max-width: 270px;
+        padding: 5px;
+    }
+
+    .gallery-img-wsp {
+        max-width: 270px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+    }
+
+    .gallery-part-title {
+        text-align: center;
+    }
+ 
+     #logo {
+         margin-left: 10px;      
+     }
+ 
+     #navbar-button {
+         margin-right: -10px;
+     }
+
+}

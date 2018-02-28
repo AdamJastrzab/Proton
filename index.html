@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pro-Ton Studio Krzysztof Jastrząb</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="js/jscolor.js"></script>
+        <script>
+        function home(jscolor) {
+    // 'jscolor' instance can be used as a string
+    
+    document.getElementById('home').style.backgroundColor = '#' + jscolor;
+}
+
+function about(jscolor) {
+    // 'jscolor' instance can be used as a string
+    document.getElementById('about').style.backgroundColor = '#' + jscolor;
+}
+
+function studio(jscolor) {
+    // 'jscolor' instance can be used as a string
+    document.getElementById('studio').style.backgroundColor = '#' + jscolor;
+}
+
+function gallery(jscolor) {
+    // 'jscolor' instance can be used as a string
+    document.getElementById('gallery').style.backgroundColor = '#' + jscolor;
+}
+
+function filmography(jscolor) {
+    // 'jscolor' instance can be used as a string
+    document.getElementById('filmography').style.backgroundColor = '#' + jscolor;
+}
+
+function contact(jscolor) {
+    // 'jscolor' instance can be used as a string
+    document.getElementById('contact').style.backgroundColor = '#' + jscolor;
+}
+
+function footer(jscolor) {
+    // 'jscolor' instance can be used as a string
+    document.getElementById('footer').style.backgroundColor = '#' + jscolor;
+}
+
+function navbarColor(jscolor) {
+    // 'jscolor' instance can be used as a string
+    document.getElementById('navbar-padding').style.backgroundColor = '#' + jscolor;
+    document.getElementById('navbarcolor2').style.backgroundColor = '#' + jscolor;
+}
+
+function filmy(jscolor) {
+    // 'jscolor' instance can be used as a string
+    document.getElementById('filmy1').style.backgroundColor = '#' + jscolor;
+}
+
+function filmy2(jscolor) {
+    // 'jscolor' instance can be used as a string
+    document.getElementById('filmy2').style.backgroundColor = '#' + jscolor;
+}
+
+        </script>
+</head>
+<body>
+
+    <nav id="navbar-padding" class="navbar navbar-toggleable-sm navbar-light fixed-top">
+        <div id="navbar-fullwidth" class="container">
+            <button id="navbar-button" class="menu-button navbar-button-sm navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#home"><img id="logo" src="images/logo.png" height="65px" alt="logo"> </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul id="navbarcolor2" class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                            <a id="nav-link-about" class="nav-link" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">O FIRMIE</a>
+                            </li>
+                            <li class="nav-item">
+                            <a id="nav-link-studio" class="nav-link" href="#studio" data-toggle="collapse" data-target=".navbar-collapse.show">STUDIO</a>
+                            </li>
+                            <li class="nav-item">
+                            <a id="nav-link-gallery" class="nav-link" href="#gallery" data-toggle="collapse" data-target=".navbar-collapse.show">GALERIA</a>
+                            </li>
+                            <li class="nav-item">
+                            <a id="nav-link-filmography" class="nav-link" href="#filmography" data-toggle="collapse" data-target=".navbar-collapse.show">FILMOGRAFIA</a>
+                            </li>
+                            <li class="nav-item" >
+                            <a id="nav-link-contact" class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">KONTAKT</a>
+                            </li>
+                    </ul>
+            </div>
+        </div>
+                    
+    </nav>
+
+<div style="width: 170px; position: fixed; bottom: 50px;">
+    <span style="color:white;">menu</span><input class="jscolor" onchange="navbarColor(this.jscolor)" value="000">
+    <span style="color:white;">str glowna</span><input class="jscolor" onchange="home(this.jscolor)" value="000">
+    <span style="color:white;">o firmie</span><input class="jscolor" onchange="about(this.jscolor)" value="000">
+    <span style="color:white;">studio</span> <input class="jscolor" onchange="studio(this.jscolor)" value="000">
+    <span style="color:white;">galeria</span><input class="jscolor" onchange="gallery(this.jscolor)" value="000">
+    <span style="color:white;">filmografia</span><input class="jscolor" onchange="filmography(this.jscolor)" value="000">
+    <span style="color:white;">filmy</span><input class="jscolor" onchange="filmy(this.jscolor)" value="000">
+    <span style="color:white;">filmy po rozwinieciu</span><input class="jscolor" onchange="filmy2(this.jscolor)" value="000">
+    <span style="color:white;">kontakt</span><input class="jscolor" onchange="contact(this.jscolor)" value="000">
+    <span style="color:white;">footer</span><input class="jscolor" onchange="footer(this.jscolor)" value="000">
+</div>     
+       
+    <section id="home" class="home">
+            
+        <div class="container">         
+            <div class="home-wrapper">
+                <img class="home-img" src="images/glowna.png" alt="studio">
+            </div>
+        </div>
+            
+    </section>
+    
+    <section id="about" class="about">      
+        <div class="container">
+            <h1 class="about-headline">O firmie</h1>
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <p class="firma-paragraph paragraph-even">Firma Pro-Ton Krzysztof Jastrząb działa od 1998 roku. Oferuje profesjonalne usługi w zakresie realizacji dźwięku na planie filmowym oraz kompleksową postprodukcję dźwięku włącznie z końcowym zgraniem.</p>
+                    <p class="zalozyciel-paragraph">Założycielem   i  właścicielem   firmy  jest  dr hab.  Krzysztof  Jastrząb  - absolwent i wieloletni pedagog Wydziału Reżyserii Dźwięku Uniwersytetu Muzycznego Fryderyka Chopina w Warszawie, autor dźwięku do wielu filmów fabularnych, seriali telewizyjnych, teatrów TV i reklam.</p>
+                    <p class="zakres-paragraph">W zakres działań firmy wchodzą:</p>
+                    <ul class="about-ul">
+                        <li class="about-li">nagrania na planie filmowym,</li>
+                        <li class="about-li">montaż i czyszczenie materiałów stuprocentowych,</li>
+                        <li class="about-li">nagrania i montaż postsynchronów,</li>
+                        <li class="about-li">nagrania i montaż dubbingów i lektorów,</li>
+                        <li class="about-li">nagrania i montaż efektów synchronicznych,</li>
+                        <li class="about-li">nagrania i montaż efektów niesynchronicznych i atmosfer,</li>
+                        <li class="about-li">premiks i zgranie materiałów filmowych i telewizyjnych w formatach od 2.0 do 5.1,</li>
+                        <li class="about-li">ton międzynarodowy,</li>
+                        <li class="about-li">cyfrowa rekontrukcja dźwiękowych materiałów archiwalnych,</li>
+                        <li class="about-li">sound design.</li>
+                    </ul>
+                </div>
+                <div class="about-img-center col-md-4 col-sm-12">
+                        <img class="about-img" src="images/krzysztof.jpg" alt="Krzysztof Jastrząb">
+                </div>
+            
+            <p class="col-md-8 profesjonalne-paragraph">Profesjonalne wyposażenie studia oraz twórcza współpraca z najlepszymi absolwentami Wydziału Reżyserii Dźwięku Uniwersytetu Muzycznego w Warszawie są gwarancją najwyższej jakości usług firmy Pro-Ton Krzysztof Jastrząb.</p>
+
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section id="studio" class="studio">
+        <div class="container">
+            <h1 class="studio-headline">Studio</h1>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <p class="studio-paragraph paragraph-even ">Siedziba   studia   to  wolnostojący   budynek   położony   w  cichej   okolicy (w odległości 17 km od Pałacu Kultury, doskonała komunikacja - bez korków - ulicą Górczewską, Połczyńską lub trasą S8).</p>
+                    <p class="studio-paragraph">Profesjonalna adaptacja akustyczna pomieszczeń została wysoko oceniona przez fachowców z branży fonograficznej i filmowej. Bezgłośna wentylacja pomieszczeń gwarantuje komfort pracy i wysoką jakość nagrań.</p>        
+                    <p class="studio-paragraph-pomieszczenia">Pomieszczenia studia:</p>
+                    <ul>
+                        <li class="studio-li"><span class="studio-span">DUŻE STUDIO</span> (75 m<sup>2</sup>, 5 m wysokości) - do nagrań efektów synchronicznych, postsynchronów oraz do premiksów i zgrań,</li>
+                        <li class="studio-li"><span class="studio-span">REŻYSERKA</span> (21 m<sup>2</sup>),</li>
+                        <li class="studio-li"><span class="studio-span">MONTAŻOWNIA</span> (14 m<sup>2</sup>).</li>
+                    </ul>
+                    <p class="studio-paragraph">Do dyspozycji są również: zaplecze socjalne z kuchnią, ogród, utwardzony parking.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img class="studio-img" src="images/studio1.jpg" alt="studio1">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h1 class="gallery-headline">Galeria</h1>
+
+            <h4 class="gallery-part-title">Studio</h4>
+                
+            <div class="gallery-center">
+                
+                    <div class="gallery-column">
+                        <a href="images/Studio/studio7.jpg" data-lightbox="mygallery" data-title="Opis"><img class="gallery-img" src="images/Studio/studio7.jpg" alt="studio7"></a>
+                        <a href="images/Studio/studio4.jpg" data-lightbox="mygallery" data-title="Opis"><img class="gallery-img" src="images/Studio/studio4.jpg" alt="studio4"></a>  
+                    </div> 
+                    <div class="gallery-column">   
+                        <a href="images/Studio/studio10.jpg" data-lightbox="mygallery" data-title="Opis"><img class="gallery-img" src="images/Studio/studio10.jpg" alt="studio10"></a>  
+                        <a href="images/Studio/studio3.jpg" data-lightbox="mygallery" data-title="Opis"><img class="gallery-img" src="images/Studio/studio3.jpg" alt="studio3"></a> 
+                    </div>
+                    
+                    <div class="gallery-column">
+                        <a href="images/Studio/studio9.jpg" data-lightbox="mygallery" data-title="Opis"><img class="gallery-img" src="images/Studio/studio9.jpg" alt="studio9"></a> 
+                        <a href="images/Studio/studio5.jpg" data-lightbox="mygallery" data-title="Opis"><img class="gallery-img" src="images/Studio/studio5.jpg" alt="studio5"></a>
+                    </div> 
+                
+            </div>
+                  
+
+            <a class="gallery-link" href="images/studio/studio0.jpg" data-lightbox="mygallery" data-title="Opis"><h5 class="gallery-part-title">Więcej zdjęć Studia <i class="fa fa-search"></i></h5></a> 
+            
+            <a href="images/Studio/studio1.jpg" data-lightbox="mygallery" data-title="Opis" alt="studio1"></a>
+            <a href="images/Studio/studio2.jpg" data-lightbox="mygallery" data-title="Opis" alt="studio2"></a>   
+            <a href="images/Studio/studio6.jpg" data-lightbox="mygallery" data-title="Opis" alt="studio6"></a>   
+            <a href="images/Studio/studio8.jpg" data-lightbox="mygallery" data-title="Opis" alt="studio8"></a>        
+            <a href="images/Studio/studio11.jpg" data-lightbox="mygallery" data-title="Opis" alt="studio11"></a>   
+            <a href="images/Studio/studio12.jpg" data-lightbox="mygallery" data-title="Opis" alt="studio12"></a>   
+              
+        
+
+            <h4 class="gallery-part-title gallery-part-title-wsp">Współpracownicy</h4>
+              
+            <div class="gallery-center">
+                <div class="gallery-column">
+                    <img class="gallery-img-wsp" src="images/wspolpracownicy/jacek.jpg" alt="wspolpracownik">
+                    <span class="signature">Jacek Pająk</span>
+                    <img class="gallery-img-wsp" src="images/wspolpracownicy/jacek.jpg" alt="wspolpracownik">
+                    <span class="signature">Jacek Pająk</span>
+                </div>
+                <div class="gallery-column">
+                    <img class="gallery-img-wsp" src="images/wspolpracownicy/jacek.jpg" alt="wspolpracownik">
+                    <span class="signature">Jacek Pająk</span>
+                    <img class="gallery-img-wsp" src="images/wspolpracownicy/jacek.jpg" alt="wspolpracownik">
+                    <span class="signature">Jacek Pająk</span>
+                </div>
+
+                <div class="gallery-column">
+                    <img class="gallery-img-wsp" src="images/wspolpracownicy/jacek.jpg" alt="wspolpracownik">
+                    <span class="signature">Jacek Pająk</span>
+                    <img class="gallery-img-wsp" src="images/wspolpracownicy/jacek.jpg" alt="wspolpracownik">
+                    <span class="signature">Jacek Pająk</span>
+                </div>
+            </div>
+            
+        
+               
+         </div>    
+    </section>
+            
+    <section id="filmography" class="filmography">
+        <div class="container">
+            <div class="filmography-center">
+            
+            <h1 class="filmography-headline">Filmografia</h1>
+                
+            <h5 class="filmography-krzysztof">Krzysztof Jastrząb - operator dźwięku</h5>
+            <div id="filmy1" class="filmography-title">
+                <img src="images/white_plus.gif" alt="plus">
+                <div class="filmography-type">
+                Film fabularny
+                </div>   
+            </div>
+            <div class="filmography-ul-container">
+                <ul id="filmy2" class="filmography-ul">
+                        <li>2015 - EXCENTRYCY CZYLI PO SŁONECZNEJ STRONIE ULICY - reż. Janusz Majewski</li>
+                        <span class="filmography-nomination">Orły 2016 - Nagroda za Najlepszy dźwięk</span>
+                        <li>2014 - KAMIENIE NA SZANIEC - reż. Robert Gliński</li>
+                        <li>2011 - MOJA AUSTRALIA - reż. Ami Drozd</li>
+                        <li>2010 - MAŁA MATURA 1947 - reż. Janusz Majewski</li>
+                        <span class="filmography-nomination">Orły 2012 - Nominacja w kategorii: Najlepszy dźwięk</span>
+                        <li>2009 - AFONIA I PSZCZOŁY - reż. Jan Jakub Kolski</li>
+                        <span class="filmography-nomination">Orły 2010 - Nominacja w kategorii: Najlepszy dźwięk</span>
+                        <li>2009 - JANOSIK. PRAWDZIWA HISTORIA - reż. Agnieszka Holland, Kasia Adamik</li> 
+                        <span class="filmography-nomination">Orły 2010 - Nominacja w kategorii: Najlepszy dźwięk</span>
+                        <li>2006 - JASNE BŁĘKITNE OKNA - reż. Bogusław Linda</li>
+                        <li>2002 - MOJE PIECZONE KURCZAKI - film z cyklu POKOLENIE 2000 - reż. Iwona Siekierzyńska</li>
+                        <li>2002 - DWIE MIŁOŚCI - reż. Mirosław Bork</li>
+                        <li>2001 - PRZEDWIOŚNIE - reż. Filip Bajon</li>
+                        <li>2000 - SEZON NA LESZCZA - reż. Bogusław Linda</li>
+                        <li>2000 - NIECH GRA MUZYKA - reż. Andrzej Barański</li>
+                        <li>1999 - PATRZĘ NA CIEBIE MARYSIU - reż. Łukasz Barczyk</li>
+                        <li>1995 - PESTKA - reż. Krystyna Janda</li>
+                        <li>1994 - PSY 2. OSTATNIA KREW - reż. Władysław Pasikowski</li>
+                        <li>1994 - FAUSTYNA - reż. Jerzy Łukaszewicz</li>
+                        <li>1993 - ŁOWCA. OSTATNIE STARCIE - Jerzy Łukaszewicz</li>
+                        <li>1993 - KOLEJNOŚĆ UCZUĆ - Radosław Piwowarski</li>
+                        <li>1992 - WSZYSTKO, CO NAJWAŻNIEJSZE... - reż. Robert Gliński</li>
+                        <span class="filmography-nomination">Festiwal Polskich Filmów Fabularnych, Gdynia 1992 - Nagroda za dźwięk</span>
+                        <li>1991 - ODJAZD - reż. Magdalena i Piotr Łazarkiewicz</li>
+                        <li>1991 - KONIEC GRY - reż. Feliks Falk</li>
+                        <li>1990 - FEMINA - reż. Piotr Szulkin</li>
+                </ul>      
+            </div>   
+        
+            <div class="filmography-title">
+                    <img src="images/white_plus.gif"  alt="plus" />
+                    <div class="filmography-type">
+                    Film fabularny - współpraca
+                    </div>
+                    
+            </div>
+            <div class="filmography-ul-container">
+                <ul  class="filmography-ul">
+                        <li>2007 - RANCZO WILKOWYJE - reż. Wojciech Adamczyk</li>
+                        <li>1995 - PROWOKATOR - reż. Krzysztof Lang</li>
+                        <li>1992 - PIERŚCIONEK Z ORŁEM W KORONIE - reż. Andrzej Wajda</li>
+                        <li>1992 - WIELKA WSYPA - reż. Jan Łomnicki</li>
+                        <li>1990 - KORCZAK - reż. Andrzej Wajda</li>
+                        <li>1990 - MÓJ IZKOR. PAMIĘCI TYCH, KTÓRZY ODESZLI NA ZAWSZE - reż. Włodzimierz Gołaszewski</li>
+                        <li>1997 - MŁODE WILKI 1/2 - reż. Jarosław Żamojda</li>
+                        <li>1986 - PAN KLEKS W KOSMOSIE - reż. Krzysztof Gradowski</li>
+                        <li>1984 - ...JESTEM PRZECIW - reż. Andrzej Trzos-Rastawiecki</li>
+                </ul>      
+            </div>    
+            
+            <div class="filmography-title">
+                    <img src="images/white_plus.gif" alt="plus" />
+                    <div class="filmography-type">
+                    Serial TV
+                    </div>     
+            </div>
+            <div class="filmography-ul-container">
+                <ul  class="filmography-ul">
+                        <li>2015 - DZIEWCZYNY ZE LWOWA - seria I - reż. Wojciech Adamczyk</li>
+                        <li>2015 - RANCZO - seria IX - reż. Wojciech Adamczyk</li>
+                        <li>2013 - RANCZO - seria VIII - reż. Wojciech Adamczyk</li>
+                        <li>2012 - RANCZO - seria VII - reż. Wojciech Adamczyk</li>
+                        <li>2011 - RANCZO - seria VI - reż. Wojciech Adamczyk</li>
+                        <li>2011 - LUDZIE CHUDEGO - seria II - reż. Maciej Wojtyszko</li>
+                        <li>2010 - RANCZO - seria V - reż. Wojciech Adamczyk</li>
+                        <li>2010 - LUDZIE CHUDEGO - seria I - reż. Wojciech Adamczyk</li>
+                        <li>2010 - MAŁA MATURA 1947 - reż. Janusz Majewski</li>
+                        <li>2009 - JANOSIK. PRAWDZIWA HISTORIA - reż. Agnieszka Holland, Kasia Adamik</li>
+                        <li>2009 - DO WESELA SIĘ ZAGOI - reż. Karolina Majchrzak</li>
+                        <li>2008 - RANCZO - seria IV - reż. Wojciech Adamczyk</li>
+                        <li>2007 - RANCZO - seria III - reż. Wojciech Adamczyk</li>
+                        <li>2007 - TYLKO MIŁOŚĆ - reż. Przemysław Anderman</li>
+                        <li>2007 - EKIPA - reż. Agnieszka Holland, Kasia Adamik, Magdalena Łazarkiewicz</li>
+                        <li>2004-2006 - PENSJONAT POD RÓŻĄ - reż. Mirosław Bork, Maciej Wojtyszko, Wojciech Adamczyk,
+                        Stanisław Kuźnik, Sebastian Chondrokostas</li>
+                        <li>2004 - KRYMINALNI - odc. 1-6 - reż. Ryszard Zatorski</li>
+                        <li>2003 - KASIA I TOMEK - seria II i III - reż. Jerzy Bogajewicz</li>
+                        <li>2002 - PRZEDWIOŚNIE - reż. Filip Bajon</li>
+                        <li>2002 - KRÓL PRZEDMIEŚCIA - reż. Olaf Lubaszenko</li>
+                        <li>2002 - KASIA I TOMEK - seria I - reż. Jerzy Bogajewicz</li>
+                        <li>2001-2002 - MARZENIA DO SPEŁNIENIA - reż. Piotr Mularuk, Maciej Pieprzyca</li>
+                        <li>2000 - DUŻA PRZERWA - reż. Mirosław Bork</li>
+                        <li>1998 - GWIEZDNY PIRAT - reż. Jerzy Łukaszewicz</li>
+                        <li>1998 - STATYSTYCZNI - reż. Andrzej Zaorski</li>
+                        <li>1998-1999 - CO CIĘ ZNÓW UGRYZŁO - reż. Maciej Wojtyszko
+                        <li>1997-1999 - ZŁOTOPOLSCY - reż. Janusz Zaorski, Janusz Dymek, Ireneusz Engler</li>
+                        <li>1997 - DECYZJA NALEŻY DO CIEBIE - reż. Janusz Zaorski, Krzysztof Rogala, Janusz Dymek</li>
+                        <li>1996 - TAJEMNICA SAGALI - reż. Jerzy Łukaszewicz</li>
+                        <li>1995 - ODJAZD - reż. Magdalena Łazarkiewicz, Piotr Łazarkiewicz</li>
+                        <li>1994 - ZNAJOMI - reż. Jerzy Gudejko</li>
+                </ul>      
+            </div> 
+
+            <div class="filmography-title">
+                    <img src="images/white_plus.gif"  alt="plus"/>
+                    <div class="filmography-type">
+                    Serial TV - współpraca
+                    </div>     
+            </div>
+            <div class="filmography-ul-container">
+                <ul  class="filmography-ul">
+                        <li>1999-2000 - CZUŁOŚĆ I KŁAMSTWA - Konsultacja (odc. 1-8) - reż. Jarosław Żamojda</li>
+                        <li>1999 - 100 MINUT WAKACJI - reż. Andrzej Maleszka</li>
+                        <li>1996 - AKROPOLAND - reż. Jerzy Kryszak, Andrzej Zaorski</li>
+                        <li>1996 - TATA, A MARCIN POWIEDZIAŁ - reż. Wojciech Adamczyk</li>
+                        <li>1995 - RADIO ROMANS - reż. Ireneusz Engler, Janusz Dymek</li>
+                        <li>1993 - BANK NIE Z TEJ ZIEMI - reż. Marcin Ziębiński, Paweł Sala</li>
+                        <li>1989 - MODRZEJEWSKAODRZEJEWSKA - reż. Jan Łomnicki</li>
+                </ul>      
+            </div> 
+
+            <div class="filmography-title">
+                    <img src="images/white_plus.gif" alt="plus" />
+                    <div class="filmography-type">
+                    Teatr TV
+                    </div>     
+            </div>
+            <div class="filmography-ul-container">
+                <ul  class="filmography-ul">
+                        <li>2003 - ŚMIECH W CIEMNOŚCI - reż. Filip Bajon</li>
+                        <li>2000 - OGIEŃ W GŁOWIE - reż. Piotr Łazarkiewicz</li>
+                        <li>1999 - DALEJ NIŻ NA WAKACJE - reż. Piotr Trzaskalski</li>
+                        <li>1999 - WOJNA KRESKÓWEK - reż. Jarosław Żamojda</li>
+                        <li>1997 - WNIEBOWSTĄPIENIE - reż. Roland Rowiński</li>
+                        <li>1997 - GUCIO ZACZAROWANY - reż. Tadeusz Arciuch</li>
+                        <li>1996 - TRISTAN I IZOLDA - reż. Krystyna Janda</li>
+                        <li>1995 - EKSCELENCJA - reż. Andrzej Kostenko</li>
+                        <li>1995 - CYD - reż. Krystyna Janda</li>
+                        <li>1995 - 33 OMDLENIA - reż. Zbigniew Zapasiewicz</li>
+                        <li>1995 - ŻEGNAJ... KOCHANIE - reż. Wojciech Wójcik</li>
+                        <li>1995 - KRAINA ANTYBAŚNI - KOPCIUSZEK - reż. Jerzy Kryszak</li>
+                        <li>1994 - SAMOBÓJSTWO - reż. Jerzy Sztwiertnia</li>
+                        <li>1994 - MAŁE SZTUKI DLA SCENY JARMARCZNEJ - reż. Agnieszka Glińska</li>
+                        <li>1994 - IVETTE - reż. Filip Zylber</li>
+                        <li>1994 - ZABAWA W KOTY - reż. Marta Meszaros</li>
+                        <li>1994 - IDŹ DO PANNY TORPE - reż. Teresa Kotlarczyk</li>
+                        <li>1993 - W KÓŁKO TO SAMO - reż. Tomasz Zygadło</li>
+                        <li>1993 - DZIESIĄTA BEETHOVENA - reż. Bogdan Augustyniak</li>
+                        <li>1993 - ZIMORODEK - reż. Witold Skaruch, realizacja TV Anna Minkiewicz</li>
+                </ul>      
+            </div> 
+
+            <div class="filmography-title">
+                    <img src="images/white_plus.gif" alt="plus" />
+                    <div class="filmography-type">
+                    Krótki metraż, dokument
+                    </div>     
+            </div>
+            <div class="filmography-ul-container">
+                <ul  class="filmography-ul">
+                        <li>2013 - JAK GŁĘBOKI JEST OCEAN? - reż. Filip Syczyński</li>
+                        <li>2007 - A GDYBY TAK SIĘ STAŁO - reż. Marcel Łoziński
+                        <li>2006 - JAK TO SIĘ ROBI - Współpraca dźwiękowa - reż. Marcel Łoziński</li>
+                        <li>2002 - KOMPUTER I ŚWIAT - 3 odcinki cyklu telewizyjnego</li>
+                        <li>2001 - PRZEŻYĆ PRZEDWIOŚNIE - reż. Maciej Pisarek</li>
+                        <li>2001 - JAK PRZYSZŁO PRZEDWIOŚNIE - reż. Maciej Pisarek</li>
+                        <li>1999 - TAJEMNICE ALKOWY - reż. Hanna Głowacka</li>
+                        <li>1998 - SZOPKA NOWOROCZNA - reż. Andrzej Zaorski, Marcin Wolski</li>
+                        <li>1995 - DOM UKRAINNY - realizacja Piotr Morawski</li>
+                        <li>1995 - SZKOŁA DLA ORŁÓW - reż. Krzysztof Wierzbicki</li>
+                        <li>1994 - MŁODOŚĆ WINNA BYĆ NAGŁA I OSTRA JAK KLINGA! - reż. Wiktor Skrzynecki</li>
+                        <li>1994 - PROGRAM JUBILEUSZOWY - reż. Waldemar Szarek</li>
+                        <li>1992 - ZDARZENIE - reż. Maciej Ślesicki</li>
+                        <li>1991 - MENU - TRYPTYK NORMANDZKI - reż. Danuta Wasylewska, Andrzej Wasylewski</li>
+                        <li>1990 - PROCES - reż. Krzysztof Lang</li>
+                        <li>1989 - DAR SERCA - RZECZ O TERESIE STRZEMBOSZ - reż. Bożena Garus-Hockuba</li>
+                        <li>1985 - DZIEŃ DZIECKA NA WSI - reż. Paweł Kędzierski</li>
+                        
+                </ul>      
+            </div> 
+
+
+            
+            <h5 class="filmography-studio">Pro-Ton Studio</h5>
+            <div class="filmography-title">
+                    <img src="images/white_plus.gif"  alt="plus"/>
+                    <div class="filmography-type">
+                    Film fabularny - Efekty Synchroniczne
+                    </div>   
+                </div>
+                <div class="filmography-ul-container">
+                    <ul class="filmography-ul">
+                            <li>2015 - SŁABA PŁEĆ? - reż. Krzysztof Lang</li>
+                            <li>2015 - EXCENTRYCY CZYLI PO SŁONECZNEJ STRONIE ULICY - reż. Janusz Majewski</li>
+                            <span class="filmography-nomination">40. Festiwal Filmowy w Gdyni - Srebrny Lwy</span>
+                            <span class="filmography-nomination">Orły 2016 - Nominacja w kategorii: Najlepszy film</span>
+                            <span class="filmography-nomination">Orły 2016 - Nagroda za Najlepszy dźwięk dla Krzysztof Jastrząba i Mateusza 
+                            
+                            Irisika</span>
+                            <li>2015 - OBCE NIEBO -reż. Dariusz Gajewski</li>
+                            <li>2015 - NOC WALPURGI - reż. Marcin Bortkiewicz</li>
+                            <li>2015 - MOJE CÓRKI KROWY - reż. Kinga Dębska</li>
+                            <li>2015 - DISCO POLO - reż. Maciej Bochniak</li>
+                            <li>2014 - WALSER - reż. Zbigniew Libera</li>
+                            <li>2014 - LA MONTAGNE MAGIQUE - reż. Anca Damian</li>
+                            <li>2014 - PIĄTE. NIE ODCHODŹ! - reż. Katarzyna Jungowska</li>
+                            <li>2014 - WARSAW BY NIGHT - reż. Natalia Koryncka-Gruz</li>
+                            <li>2014 - WOŁANIE - reż. Marcin Dudziak</li>
+                            <li>2014 - BOGOWIE - reż. Łukasz Palkowski</li>
+                            <span class="filmography-nomination">39. Gdynia Film Festival - Złote Lwy;</span>
+                            <span class="filmography-nomination">Orły 2013 - Nagroda Publiczności</span>
+                            <li>2014 - MIĘDZY NAMI DOBRZE JEST - reż. Grzegorz Jarzyna</li>
+                            <li>2014 - MIASTO 44 - reż. Jan Komasa</li>
+                            <span class="filmography-nomination">39. Gdynia Film Festival - Nagroda za Dźwięk dla Bartosza Putkiewicza</span>
+                            <li>2014 - DŻEJ DŻEJ - reż. Maciej Pisarek</li>
+                            <li>2014 - KAMIENIE NA SZANIEC - reż. Robert Gliński</li>
+                            <li>2013 - PAPUSZA - reż. Joanna Kos-Krauze, Krzysztof Krauze</li>
+                            <li>2013 - SYBERIADA POLSKA - reż. Janusz Zaorski</li>
+                            <li>2013 - jOBS - reż. Joshua Michael Stern</li>
+                            <li>2013 - EMANUEL AND THE TRUTH ABOUT FISHES - reż. Francesca Gregorini</li>
+                            <li>2012 - THE MARINE: HOMEFRONT - reż. Scott Wiper</li>
+                            <li>2012 - ATLAS SHRUGGED: PART II - reż. John Putch</li>
+                            <li>2012 - JOSH - reż. Iram Parveen Bilal</li>
+                            <li>2012 - KOMISARZ BLOND I OKO SPRAWIEDLIWOŚCI - reż. Paweł Czarzasty</li>
+                            <li>2012 - DZIEWCZYNA Z SZAFY - reż. Bodo Kox</li>
+                            <li>2012 - THE BRASS TEAPOT - reż. Ramaa Mosley</li>
+                            <li>2012 - OBŁAWA - reż. Marcin Krzyształowicz</li>
+                            <span class="filmography-nomination">Orły 2013 - Nagroda za Najlepszy dźwięk dla Piotra Domaradzkiego i Barbary 
+                            
+                            Domaradzkiej;</span>
+                            <span class="filmography-nomination">Orły 2013 - Nagroda w kategorii: Najlepszy film;</span>
+                            <span class="filmography-nomination">37. Gdynia Film Festival - Srebrne Lwy</span>
+                            <li>2012 - THE PHILOSOPHERS - reż. John Huddles</li>
+                            <li>2012 - DZIEŃ KOBIET - reż. Maria Sadowska</li>
+                            <li>2012 - JESTEŚ BOGIEM - reż. Leszek Dawid</li>
+                            <span class="filmography-nomination">Orły 2013 - Nominacja w kategorii: Najlepszy film;</span>
+                            <span class="filmography-nomination">Orły 2013 - Nagroda Publiczności</span>
+                            <li>2011 - HOME RUN SHOWDOWN - reż. Oz Scott</li>
+                            <li>2011 - BEZ WSTYDU - reż. Filip Marczewski</li>
+                            <li>2011 - 1920 BITWA WARSZAWSKA - reż. Jerzy Hoffman</li>
+                            <span class="filmography-nomination">Golden Reel Awards 2012 - Nominacja w kategorii:
+                            "filmography-nomination">Best Sound Editing: Sound Effects, Foley, Dialogue and ADR in a Feature Foreign Language 
+                            
+                            Film</span>
+                            <li>2011 - FRENEMIES - reż. Daisy von Scherler Mayer</li>
+                            <li>2011 - BYĆ JAK KAZIMIERZ DEYNA - reż. Anna Wieczur-Bluszcz</li>
+                            <li>2011 - NIEBO - reż. Jan P. Matuszyński</li>
+                            <li>2011 - DROGA NA DRUGĄ STRONĘ - reż. Anca Damian</li>
+                            <span class="filmography-nomination">37. Gdynia Film Festival - Nagroda za Dźwięk dla Piotra Witkowskiego i 
+                            
+                            Sebastiana Włodarczyka;</span>
+                            <span class="filmography-nomination">Premiile Gopo 2012 (Romanian Film Awards) - Nagroda za Najlepszy dźwięk</span>
+                            dla Piotra Witkowskiego i Sebastiana Włodarczyka
+                            <li>2010 - "KRET" - reż. Rafael Lewandowski</li>
+                            <li>2010 - MAŁA MATURA 1947 - reż. Janusz Majewski</li>
+                            <span class="filmography-nomination">Orły 2012 - Nominacja w kategorii: Najlepszy dźwięk</span>
+                            <li>2010 - WHISKY Z MLEKIEM - reż. Aleksander Michajłow</li>
+                    </ul>      
+                </div>    
+                
+                <div class="filmography-title">
+                        <img src="images/white_plus.gif" alt="plus" />
+                        <div class="filmography-type">
+                        Serial TV - Efekty Synchroniczne
+                        </div>
+                        
+                </div>
+                <div class="filmography-ul-container">
+                    <ul  class="filmography-ul">
+                            <li>2010 - MAŁA MATURA 1947 - reż. Janusz Majewski</li>
+                    </ul>      
+                </div> 
+
+                <div class="filmography-title">
+                        <img src="images/white_plus.gif"  alt="plus"/>
+                        <div class="filmography-type">
+                        Film krótkometrażowy - Efekty Synchroniczne
+                        </div>        
+                </div>
+                <div class="filmography-ul-container">
+                    <ul  class="filmography-ul">
+                            <li>2015 - AMERYKA - reż. Aleksandra Terpińska</li>
+                            <li>2014 - THE LAST WALTZ - reż. Maciej Kawalski</li>
+                            <li>2014 - TA CHOLERNA NIEDZIELA - reż. Przemysław Kotyński</li>
+                            <li>2014 - MLECZNY BRAT - reż. Vahram Mkhitaryan</li>
+                            <span class="filmography-nomination">39. Gdynia Film Festival - Nagroda Konkursu Młodego Kina</span>
+                            <li>2013 - THE BIG LEAP - reż. Kristoffer Rus</li>
+                            <li>2013 - JAK GŁĘBOKI JEST OCEAN? - reż. Filip Syczyński</li>
+                    </ul>      
+                </div> 
+
+                <div class="filmography-title">
+                        <img src="images/white_plus.gif"  alt="plus"/>
+                        <div class="filmography-type">
+                        Film dokumentalny - Efekty Synchroniczne
+                        </div>        
+                </div>
+                <div class="filmography-ul-container">
+                    <ul  class="filmography-ul">
+                            <li>2015 - ŁOWCY MIODU - reż. Krystian Matysek</li>
+                            <li>2013 - TRZY KOBIETY - reż. Anna Jadowska</li>
+                    </ul>      
+                </div> 
+
+                <div class="filmography-title">
+                        <img src="images/white_plus.gif"  alt="plus"/>
+                        <div class="filmography-type">
+                        
+                        Postprodukcja dźwięku, montaż dialogów, postsynchrony, premiks
+                        </div>        
+                </div>
+                <div class="filmography-ul-container">
+                    <ul  class="filmography-ul">
+                            <li>2014 - WOŁANIE - reż. Marcin Dudziak</li>
+                            <li>2014 - KAMIENIE NA SZANIEC - reż. Robert Gliński</li>
+                    </ul>  
+                </div> 
+
+                <div class="filmography-title">
+                        <img src="images/white_plus.gif"  alt="plus"/>
+                        <div class="filmography-type">
+                        
+                        Rekonstrukcja cyfrowa
+                        </div>        
+                </div>
+                <div class="filmography-ul-container">
+                    <ul  class="filmography-ul">
+                            <li>2014 - WSZYSTKO, CO NAJWAŻNIEJSZE... - reż. Robert Gliński</li>
+                            <li>2011 - ZAKLĘTE REWIRY - reż. Janusz Majewski</li>
+                    </ul>  
+                </div> 
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h1 class="contact-headline">Kontakt</h1>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div id="contact-map" class="contact-map"></div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-details">
+                            <p class="details-headline">ADRES</p>
+                            <p class="details-data">05-082 Koczargi Nowe, ul. Wiosenna 8</p>             
+                            <p class="details-headline">EMAIL</p>
+                            <p class="details-data">krzysztof.jastrzab@pro-ton-studio.pl</p>
+                            <p class="details-headline">TELEFON</p>
+                            <p class="details-data">501 283 077<br>(22) 752 90 35</p> 
+                            <p class="details-headline">PRO-TON STUDIO</p>   
+                            <a href="https://www.facebook.com/StudioProTon/"  target="blank"><img class="contact-facebook" src="images/fb.png"  alt="facebook"></img></a>  
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" class="footer">
+        <div class="container">
+            <p class="rights">2011-2018 © Pro-Ton Krzysztof Jastrząb. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </section>
+
+
+<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/filmography.js"></script>   
+<script type="text/javascript" src="js/googleMaps.js"> </script>   
+<script type="text/javascript" src="js/scroll.js"></script>  
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB74yRMNUmPWYI4mn3bM6UzfpFW4xEMq_Q&callback=initMap"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+</html>
