@@ -123,7 +123,7 @@ body {
   display: flex; }
 
 .gallery-img-wsp {
-  max-width: 320px;
+  max-width: 280px;
   display: flex;
   padding-left: 10px;
   padding-right: 10px;
@@ -214,7 +214,8 @@ body {
   margin-top: 10px; }
 
 .filmography-ul {
-  color: white; }
+  color: white;
+  list-style-type: square; }
 
 .filmography-nomination {
   color: red; }
@@ -284,6 +285,10 @@ body {
   .gallery-part-title {
     max-width: 760px; } }
 
+@media (max-width: 769px) {
+  #nav-link-about, #nav-link-studio, #nav-link-gallery, #nav-link-filmography, #nav-link-contact {
+    margin-left: 0; } }
+
 @media (max-width: 768px) {
   .about-img-center {
     display: flex;
@@ -299,8 +304,10 @@ body {
     margin-left: 0; }
   .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
     width: 525px; }
-  .gallery-img, .gallery-img-wsp {
+  .gallery-img {
     max-width: 500px; }
+  .gallery-img-wsp {
+    max-width: 280px; }
   .gallery-center {
     flex-direction: column; }
   .gallery-column {
@@ -336,7 +343,6 @@ body {
     max-width: 400px;
     padding: 8px; }
   .gallery-img-wsp {
-    max-width: 400px;
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 8px; }
@@ -354,7 +360,7 @@ body {
     max-width: 330px;
     padding: 6px; }
   .gallery-img-wsp {
-    max-width: 330px;
+    max-width: 250px;
     padding-left: 6px;
     padding-right: 6px;
     padding-top: 6px; }
@@ -382,12 +388,10 @@ body {
     max-width: 270px;
     padding: 5px; }
   .gallery-img-wsp {
-    max-width: 270px;
+    max-width: 220px;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px; }
-  .gallery-part-title {
-    text-align: center; }
   #logo {
     margin-left: 10px; }
   #navbar-button {

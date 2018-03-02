@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0;   
 }
 
 .nav-link {
@@ -153,7 +153,7 @@ body {
 }
 
 .gallery-img-wsp {
-    max-width: 320px;
+    max-width: 280px;
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
@@ -225,6 +225,7 @@ body {
 }
 
 
+
 .filmography-ul-container {
     width: 750px;
 }
@@ -265,6 +266,7 @@ margin-top: 10px;
 
 .filmography-ul {
     color: white;
+    list-style-type: square;
 }
 
 .filmography-nomination {
@@ -363,6 +365,12 @@ margin-top: 10px;
     }
 }
 
+@media (max-width: 769px) {
+    #nav-link-about, #nav-link-studio, #nav-link-gallery, #nav-link-filmography, #nav-link-contact {
+      margin-left: 0;     
+}
+}
+
 
 @media (max-width: 768px) {
     .about-img-center {
@@ -391,8 +399,12 @@ margin-top: 10px;
         width: 525px;
     } 
     
-    .gallery-img, .gallery-img-wsp {
+    .gallery-img {
         max-width: 500px;
+    }
+
+    .gallery-img-wsp {
+        max-width: 280px;
     }
     
     .gallery-center {
@@ -456,7 +468,6 @@ margin-top: 10px;
     }
 
     .gallery-img-wsp {
-        max-width: 400px;
         padding-left: 8px;
         padding-right: 8px;
         padding-top: 8px;
@@ -486,7 +497,7 @@ margin-top: 10px;
     }
 
     .gallery-img-wsp {
-        max-width: 330px;
+        max-width: 250px;
         padding-left: 6px;
         padding-right: 6px;
         padding-top: 6px;
@@ -535,14 +546,10 @@ margin-top: 10px;
     }
 
     .gallery-img-wsp {
-        max-width: 270px;
+        max-width: 220px;
         padding-left: 5px;
         padding-right: 5px;
         padding-top: 5px;
-    }
-
-    .gallery-part-title {
-        text-align: center;
     }
  
      #logo {

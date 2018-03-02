@@ -1,114 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Pro-Ton Studio Krzysztof Jastrząb</title>
+        
+        <meta name="description" content="Strona Studia Pro-Ton">
+        <meta name="keywords" content="Studio, dźwięk do filmów">
+        <meta name="author" content="Adam Jastrząb">
+
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/lightbox.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <script src="js/jscolor.js"></script>
-        <script>
-        function home(jscolor) {
-    // 'jscolor' instance can be used as a string
-    
-    document.getElementById('home').style.backgroundColor = '#' + jscolor;
-}
-
-function about(jscolor) {
-    // 'jscolor' instance can be used as a string
-    document.getElementById('about').style.backgroundColor = '#' + jscolor;
-}
-
-function studio(jscolor) {
-    // 'jscolor' instance can be used as a string
-    document.getElementById('studio').style.backgroundColor = '#' + jscolor;
-}
-
-function gallery(jscolor) {
-    // 'jscolor' instance can be used as a string
-    document.getElementById('gallery').style.backgroundColor = '#' + jscolor;
-}
-
-function filmography(jscolor) {
-    // 'jscolor' instance can be used as a string
-    document.getElementById('filmography').style.backgroundColor = '#' + jscolor;
-}
-
-function contact(jscolor) {
-    // 'jscolor' instance can be used as a string
-    document.getElementById('contact').style.backgroundColor = '#' + jscolor;
-}
-
-function footer(jscolor) {
-    // 'jscolor' instance can be used as a string
-    document.getElementById('footer').style.backgroundColor = '#' + jscolor;
-}
-
-function navbarColor(jscolor) {
-    // 'jscolor' instance can be used as a string
-    document.getElementById('navbar-padding').style.backgroundColor = '#' + jscolor;
-    document.getElementById('navbarcolor2').style.backgroundColor = '#' + jscolor;
-}
-
-function filmy(jscolor) {
-    // 'jscolor' instance can be used as a string
-    document.getElementById('filmy1').style.backgroundColor = '#' + jscolor;
-}
-
-function filmy2(jscolor) {
-    // 'jscolor' instance can be used as a string
-    document.getElementById('filmy2').style.backgroundColor = '#' + jscolor;
-}
-
-        </script>
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
 </head>
 <body>
 
-    <nav id="navbar-padding" class="navbar navbar-toggleable-sm navbar-light fixed-top">
+    <nav id="navbar-padding" class="navbar navbar-toggleable-sm navbar-inverse fixed-top">
         <div id="navbar-fullwidth" class="container">
             <button id="navbar-button" class="menu-button navbar-button-sm navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#home"><img id="logo" src="images/logo.png" height="65px" alt="logo"> </a>
             <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul id="navbarcolor2" class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                            <a id="nav-link-about" class="nav-link" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">O FIRMIE</a>
-                            </li>
-                            <li class="nav-item">
-                            <a id="nav-link-studio" class="nav-link" href="#studio" data-toggle="collapse" data-target=".navbar-collapse.show">STUDIO</a>
-                            </li>
-                            <li class="nav-item">
-                            <a id="nav-link-gallery" class="nav-link" href="#gallery" data-toggle="collapse" data-target=".navbar-collapse.show">GALERIA</a>
-                            </li>
-                            <li class="nav-item">
-                            <a id="nav-link-filmography" class="nav-link" href="#filmography" data-toggle="collapse" data-target=".navbar-collapse.show">FILMOGRAFIA</a>
-                            </li>
-                            <li class="nav-item" >
-                            <a id="nav-link-contact" class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">KONTAKT</a>
-                            </li>
-                    </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a id="nav-link-about" class="nav-link" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">O FIRMIE</a>
+                    </li>
+                    <li class="nav-item">
+                    <a id="nav-link-studio" class="nav-link" href="#studio" data-toggle="collapse" data-target=".navbar-collapse.show">STUDIO</a>
+                    </li>
+                    <li class="nav-item">
+                    <a id="nav-link-gallery" class="nav-link" href="#gallery" data-toggle="collapse" data-target=".navbar-collapse.show">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                    <a id="nav-link-filmography" class="nav-link" href="#filmography" data-toggle="collapse" data-target=".navbar-collapse.show">FILMOGRAFIA</a>
+                    </li>
+                    <li class="nav-item" >
+                    <a id="nav-link-contact" class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">KONTAKT</a>
+                    </li>
+                </ul>
             </div>
         </div>
                     
     </nav>
 
-<div style="width: 170px; position: fixed; bottom: 50px;">
-    <span style="color:white;">menu</span><input class="jscolor" onchange="navbarColor(this.jscolor)" value="000">
-    <span style="color:white;">str glowna</span><input class="jscolor" onchange="home(this.jscolor)" value="000">
-    <span style="color:white;">o firmie</span><input class="jscolor" onchange="about(this.jscolor)" value="000">
-    <span style="color:white;">studio</span> <input class="jscolor" onchange="studio(this.jscolor)" value="000">
-    <span style="color:white;">galeria</span><input class="jscolor" onchange="gallery(this.jscolor)" value="000">
-    <span style="color:white;">filmografia</span><input class="jscolor" onchange="filmography(this.jscolor)" value="000">
-    <span style="color:white;">filmy</span><input class="jscolor" onchange="filmy(this.jscolor)" value="000">
-    <span style="color:white;">filmy po rozwinieciu</span><input class="jscolor" onchange="filmy2(this.jscolor)" value="000">
-    <span style="color:white;">kontakt</span><input class="jscolor" onchange="contact(this.jscolor)" value="000">
-    <span style="color:white;">footer</span><input class="jscolor" onchange="footer(this.jscolor)" value="000">
-</div>     
-       
     <section id="home" class="home">
             
         <div class="container">         
@@ -215,22 +151,22 @@ function filmy2(jscolor) {
             <div class="gallery-center">
                 <div class="gallery-column">
                     <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Jacek Pająk</span>
+                    <span class="signature">Współpracownik 1 + opis</span>
                     <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Jacek Pająk</span>
+                    <span class="signature">Współpracownik 2 + opis</span>
                 </div>
                 <div class="gallery-column">
                     <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Jacek Pająk</span>
+                    <span class="signature">Współpracownik 3 + opis</span>
                     <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Jacek Pająk</span>
+                    <span class="signature">Współpracownik 4 + opis</span>
                 </div>
 
                 <div class="gallery-column">
                     <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Jacek Pająk</span>
+                    <span class="signature">Współpracownik 5 + opis</span>
                     <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Jacek Pająk</span>
+                    <span class="signature">Współpracownik 6 + opis</span>
                 </div>
             </div>
             
@@ -246,14 +182,14 @@ function filmy2(jscolor) {
             <h1 class="filmography-headline">Filmografia</h1>
                 
             <h5 class="filmography-krzysztof">Krzysztof Jastrząb - operator dźwięku</h5>
-            <div id="filmy1" class="filmography-title">
+            <div class="filmography-title">
                 <img src="images/white_plus.gif" alt="plus">
                 <div class="filmography-type">
                 Film fabularny
                 </div>   
             </div>
             <div class="filmography-ul-container">
-                <ul id="filmy2" class="filmography-ul">
+                <ul class="filmography-ul">
                         <li>2015 - EXCENTRYCY CZYLI PO SŁONECZNEJ STRONIE ULICY - reż. Janusz Majewski</li>
                         <span class="filmography-nomination">Orły 2016 - Nagroda za Najlepszy dźwięk</span>
                         <li>2014 - KAMIENIE NA SZANIEC - reż. Robert Gliński</li>
@@ -525,7 +461,7 @@ function filmy2(jscolor) {
                         </div>        
                 </div>
                 <div class="filmography-ul-container">
-                    <ul  class="filmography-ul">
+                    <ul class="filmography-ul">
                             <li>2015 - AMERYKA - reż. Aleksandra Terpińska</li>
                             <li>2014 - THE LAST WALTZ - reż. Maciej Kawalski</li>
                             <li>2014 - TA CHOLERNA NIEDZIELA - reż. Przemysław Kotyński</li>
@@ -613,14 +549,13 @@ function filmy2(jscolor) {
 
 
 <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/filmography.js"></script>   
-<script type="text/javascript" src="js/googleMaps.js"> </script>   
 <script type="text/javascript" src="js/scroll.js"></script>  
+<script type="text/javascript" src="js/googleMaps.js"> </script> 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB74yRMNUmPWYI4mn3bM6UzfpFW4xEMq_Q&callback=initMap"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="js/tether.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
 
 </body>
 </html>
