@@ -218,7 +218,9 @@ body {
   list-style-type: square; }
 
 .filmography-nomination {
-  color: red; }
+  color: red;
+  display: inline-block;
+  margin: 0; }
 
 .filmography-studio-type {
   color: blue; }
