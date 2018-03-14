@@ -10,6 +10,8 @@
         <meta name="keywords" content="Studio, dźwięk do filmów">
         <meta name="author" content="Adam Jastrząb">
 
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/lightbox.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css"> 
@@ -25,19 +27,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                    <a id="nav-link-about" class="nav-link" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">O FIRMIE</a>
+                        <a id="nav-link-about" class="nav-link" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">O firmie</a>
                     </li>
                     <li class="nav-item">
-                    <a id="nav-link-studio" class="nav-link" href="#studio" data-toggle="collapse" data-target=".navbar-collapse.show">STUDIO</a>
+                        <a id="nav-link-studio" class="nav-link" href="#studio" data-toggle="collapse" data-target=".navbar-collapse.show">Studio</a>
                     </li>
                     <li class="nav-item">
-                    <a id="nav-link-gallery" class="nav-link" href="#gallery" data-toggle="collapse" data-target=".navbar-collapse.show">GALERIA</a>
+                        <a id="nav-link-gallery" class="nav-link" href="#gallery-studio" data-toggle="collapse" data-target=".navbar-collapse.show">Galeria</a>
                     </li>
                     <li class="nav-item">
-                    <a id="nav-link-filmography" class="nav-link" href="#filmography" data-toggle="collapse" data-target=".navbar-collapse.show">FILMOGRAFIA</a>
+                        <a id="nav-link-coworkers" class="nav-link" href="#gallery-coworkers" data-toggle="collapse" data-target=".navbar-collapse.show">Współpracownicy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-link-filmography" class="nav-link" href="#filmography" data-toggle="collapse" data-target=".navbar-collapse.show">Filmografia</a>
                     </li>
                     <li class="nav-item" >
-                    <a id="nav-link-contact" class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">KONTAKT</a>
+                        <a id="nav-link-contact" class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -111,11 +116,9 @@
         </div>
     </section>
 
-    <section id="gallery" class="gallery">
+    <section id="gallery-studio" class="gallery-studio">
         <div class="container">
             <h1 class="gallery-headline">Galeria</h1>
-
-            <h4 class="gallery-part-title">Studio</h4>
                 
             <div class="gallery-center">
                 
@@ -136,7 +139,7 @@
             </div>
                   
 
-            <a class="gallery-link" href="images/studio1.jpg" data-lightbox="mygallery" data-title="Opis"><h5 class="gallery-part-title">Więcej zdjęć Studia <i class="fa fa-search"></i></h5></a> 
+            <a class="gallery-link" href="images/studio1.jpg" data-lightbox="mygallery" data-title="Opis">Więcej zdjęć Studia</a> 
             
             <a href="images/studio2.jpg" data-lightbox="mygallery" data-title="Opis"></a>   
             <a href="images/studio6.jpg" data-lightbox="mygallery" data-title="Opis"></a>   
@@ -145,34 +148,35 @@
             <a href="images/studio12.jpg" data-lightbox="mygallery" data-title="Opis"></a>   
             <a href="images/studio13.jpg" data-lightbox="mygallery" data-title="Opis"></a>
         
+         </div>    
+    </section>
 
-            <h4 class="gallery-part-title gallery-part-title-wsp">Współpracownicy</h4>
+    <section id="gallery-coworkers" class="gallery-coworkers" >
+        <div class="container">
+            <h1 class="gallery-headline">Współpracownicy</h1>
               
             <div class="gallery-center">
                 <div class="gallery-column">
-                    <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Współpracownik 1 + opis</span>
-                    <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Współpracownik 2 + opis</span>
+                    <img class="gallery-img-wsp" src="images/mateusz.jpg" alt="Mateusz Irysik">
+                    <span class="signature">Mateusz Irysik</span>
+                    <img class="gallery-img-wsp" src="images/krzysztof.jpg" alt="Krzysztof Salawa">
+                    <span class="signature">Krzysztof Salawa</span>
                 </div>
                 <div class="gallery-column">
-                    <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Współpracownik 3 + opis</span>
-                    <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Współpracownik 4 + opis</span>
+                    <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="Jacek Pająk">
+                    <span class="signature">Jacek Pająk</span>
+                    <img class="gallery-img-wsp" src="images/denis.jpg" alt="Denis Dubiella">
+                    <span class="signature">Denis Dubiella</span>
                 </div>
 
                 <div class="gallery-column">
-                    <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Współpracownik 5 + opis</span>
-                    <img class="gallery-img-wsp" src="images/jacek_small.jpg" alt="wspolpracownik">
-                    <span class="signature">Współpracownik 6 + opis</span>
+                    <img class="gallery-img-wsp" src="images/olga.jpg" alt="Olga Pietrzak">
+                    <span class="signature">Olga Pietrzak</span>
+                    <img class="gallery-img-wsp" src="images/alina.jpg" alt="Alina Kowalska">
+                    <span class="signature">Alina Kowalska</span>
                 </div>
-            </div>
-            
-        
-               
-         </div>    
+            </div> 
+        </div>       
     </section>
             
     <section id="filmography" class="filmography">
@@ -532,11 +536,11 @@
         </div>
     </section>
 
-    <section id="footer" class="footer">
+    <footer id="footer" class="footer">
         <div class="container">
             <p class="rights">2011-2018 © Pro-Ton Krzysztof Jastrząb. Wszelkie prawa zastrzeżone.</p>
         </div>
-    </section>
+    </footer>
 
 
 <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
