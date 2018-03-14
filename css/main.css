@@ -10,10 +10,10 @@ body {
 
 .navbar {
   height: 80px;
-  background-color: #001a3f; }
+  background-color: #2c2c2c; }
 
 .navbar-nav {
-  background-color: #001a3f; }
+  background-color: #2c2c2c; }
 
 .menu-button {
   color: white; }
@@ -25,17 +25,17 @@ body {
   top: 100%;
   width: 0;
   height: 2px;
-  background-color: #376891;
+  background-color: #6f6f6f;
   transition: width 0.75s ease-in-out; }
 
 .nav-item:hover::after {
   width: 100%; }
 
-#nav-link-about, #nav-link-studio, #nav-link-gallery, #nav-link-filmography, #nav-link-contact {
+#nav-link-about, #nav-link-studio, #nav-link-gallery, #nav-link-coworkers, #nav-link-filmography, #nav-link-contact {
   color: white; }
 
 .home {
-  background-color: #003265;
+  background-color: #4d4d4d;
   padding-bottom: 20px; }
 
 .home-wrapper {
@@ -57,7 +57,7 @@ body {
   font-weight: 550; }
 
 .about {
-  background-color: #014584;
+  background-color: #3c3c3c;
   padding-top: 30px;
   color: white;
   padding-bottom: 30px; }
@@ -88,7 +88,7 @@ body {
   max-width: 300px; }
 
 .studio {
-  background-color: #003265;
+  background-color: #4d4d4d;
   padding-bottom: 30px;
   padding-top: 30px;
   color: white; }
@@ -108,10 +108,17 @@ body {
   font-weight: 550; }
 
 .studio-span {
-  color: red; }
+  color: red;
+  font-weight: 550; }
 
-.gallery {
-  background-color: #014584;
+.gallery-studio {
+  background-color: #585858;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white; }
+
+.gallery-coworkers {
+  background-color: #373737;
   padding-top: 30px;
   padding-bottom: 30px;
   color: white; }
@@ -137,39 +144,38 @@ body {
   cursor: pointer;
   transform: scale(1.05); }
 
-.gallery-part-title {
+.gallery-link {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto; }
 
-.gallery-part-title-wsp {
-  margin-top: 35px;
-  margin-bottom: 15px; }
-
 .gallery-link {
-  color: #929292; }
+  color: white;
+  display: inline-block;
+  font-weight: 650; }
 
 .gallery-link:link, .gallery-link:visited, .gallery-link:active {
   text-decoration: none; }
 
 .gallery-link:hover {
-  color: #797979; }
+  color: #dedede; }
 
 .signature {
   display: flex;
   justify-content: center;
+  padding-top: 7px;
   margin-bottom: 15px; }
 
 .filmography {
   padding-bottom: 30px;
   padding-top: 30px;
-  background-color: #003265;
+  background-color: #4d4d4d;
   color: white; }
 
 .filmography-title {
   width: 750px;
   height: 43px;
-  background: #014584;
+  background: #3c3c3c;
   border: 1px solid #CCCCCC;
   display: block; }
 
@@ -191,7 +197,7 @@ body {
   align-items: center; }
 
 .filmography-title:hover {
-  background-color: #093966;
+  background: #2d2d2d;
   cursor: pointer; }
 
 .filmography-title img {
@@ -203,7 +209,7 @@ body {
   display: block;
   max-width: 750px;
   padding: 10px 0;
-  background-color: #093966; }
+  background-color: #3c3c3c; }
 
 .filmography-title .filmography-type {
   display: block;
@@ -219,7 +225,8 @@ body {
 
 .filmography-nomination {
   color: red;
-  list-style-type: none; }
+  list-style-type: none;
+  font-weight: 500; }
 
 .filmography-studio-type {
   color: blue; }
@@ -228,7 +235,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   color: white;
-  background-color: #014584; }
+  background-color: #585858; }
 
 .contact-map {
   max-width: 500px;
@@ -259,11 +266,15 @@ body {
   padding-bottom: 15px;
   color: white;
   text-align: center;
-  background-color: #003265;
+  background-color: #2c2c2c;
   font-size: 12px; }
 
 .rights {
   margin: 0; }
+
+@media (min-width: 1200px) {
+  .gallery-link {
+    margin-left: 85px; } }
 
 @media (min-width: 992px) {
   .contact-map {
@@ -278,19 +289,23 @@ body {
   .contact-map {
     height: 332px; } }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
     width: 680px; }
   .gallery-img, .gallery-img-wsp {
     max-width: 250px; }
-  .gallery-part-title {
-    max-width: 760px; } }
+  .gallery-link {
+    max-width: 768px; }
+  #logo {
+    margin-top: 5px;
+    width: 200px; }
+  #nav-link-about, #nav-link-studio, #nav-link-gallery, #nav-link-coworkers, #nav-link-filmography, #nav-link-contact {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem; }
+  #nav-link-about {
+    width: 70px; } }
 
-@media (max-width: 769px) {
-  #nav-link-about, #nav-link-studio, #nav-link-gallery, #nav-link-filmography, #nav-link-contact {
-    margin-left: 0; } }
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about-img-center {
     display: flex;
     justify-content: center;
@@ -301,6 +316,8 @@ body {
     text-align: center; }
   .nav-item:hover::after {
     width: 0; }
+  #nav-link-about:hover, #nav-link-studio:hover, #nav-link-gallery:hover, #nav-link-coworkers:hover, #nav-link-filmography:hover, #nav-link-contact:hover {
+    color: #dedede; }
   .contact-facebook {
     margin-left: 0; }
   .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
@@ -315,8 +332,8 @@ body {
     flex-direction: column;
     display: flex;
     align-items: center; }
-  .gallery-part-title {
-    max-width: 480px; }
+  .gallery-link {
+    margin-left: 15px; }
   #navbar-fullwidth {
     width: 100%; }
   #navbar-padding {
@@ -329,12 +346,16 @@ body {
     margin-top: 5px; }
   #navbar-button {
     margin-top: 5px;
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  #nav-link-about, #nav-link-studio, #nav-link-gallery, #nav-link-coworkers, #nav-link-filmography, #nav-link-contact {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem; }
+  #nav-link-about {
+    width: 100%; } }
 
 @media (max-width: 576px) {
   #logo {
-    margin-right: 65px;
-    width: 200px; }
+    margin-right: 65px; }
   .home-paragraph {
     padding-top: 10px;
     padding-bottom: 10px; }
@@ -347,12 +368,15 @@ body {
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 8px; }
-  .gallery-part-title {
-    max-width: 380px; } }
+  .gallery-link {
+    display: flex;
+    justify-content: center; } }
 
 @media (max-width: 475px) {
   .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
-    width: 400px; } }
+    width: 400px; }
+  .about-headline, .studio-headline, .gallery-headline, .filmography-headline, .contact-headline {
+    font-size: 45px; } }
 
 @media (max-width: 430px) {
   .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
@@ -365,16 +389,22 @@ body {
     padding-left: 6px;
     padding-right: 6px;
     padding-top: 6px; }
-  .gallery-part-title {
-    max-width: 310px; } }
+  .gallery-link {
+    max-width: 310px; }
+  .about-headline, .studio-headline, .gallery-headline, .filmography-headline, .contact-headline {
+    font-size: 42px; } }
 
 @media (max-width: 400px) {
   .contact-map {
-    height: 280px; } }
+    height: 280px; }
+  .about-headline, .studio-headline, .gallery-headline, .filmography-headline, .contact-headline {
+    font-size: 40px; } }
 
 @media (max-width: 375px) {
   .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
-    width: 300px; } }
+    width: 300px; }
+  .about-headline, .studio-headline, .gallery-headline, .filmography-headline, .contact-headline {
+    font-size: 37px; } }
 
 @media (max-width: 342px) {
   .contact-map {
@@ -393,7 +423,7 @@ body {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px; }
-  #logo {
+  #logo, .nav-link {
     margin-left: 10px; }
   #navbar-button {
     margin-right: -10px; } }

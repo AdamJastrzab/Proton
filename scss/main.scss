@@ -1,5 +1,5 @@
 body {
-    margin: 0;   
+    margin: 0;    
 }
 
 .nav-link {
@@ -13,12 +13,12 @@ body {
 
 .navbar {
     height: 80px;
-    background-color: rgb(0,26,63);
+    background-color: rgb(44,44,44);
    
 }
 
 .navbar-nav {
-    background-color: rgb(0,26,63);
+    background-color: rgb(44,44,44);
 }  
 
 .menu-button {
@@ -32,7 +32,7 @@ body {
     top: 100%;
     width: 0;
     height: 2px;
-    background-color: #376891;
+    background-color: rgb(111,111,111);
     transition: width 0.75s ease-in-out;
 }
 
@@ -40,13 +40,13 @@ body {
     width: 100%;
 }
 
-#nav-link-about, #nav-link-studio, #nav-link-gallery, #nav-link-filmography, #nav-link-contact  {
+#nav-link-about, #nav-link-studio, #nav-link-gallery,#nav-link-coworkers, #nav-link-filmography, #nav-link-contact  {
     color:white;
 }
 
 
 .home {
-    background-color: rgb(0, 50, 101);
+    background-color: rgb(77, 77, 77);
     padding-bottom: 20px;
 }
 
@@ -72,7 +72,7 @@ body {
 }
 
 .about {
-    background-color: rgb(1, 69, 132);
+    background-color: rgb(60, 60, 60);
     padding-top: 30px;
     color: white;
     padding-bottom: 30px;
@@ -110,7 +110,7 @@ body {
 }
 
 .studio {
-    background-color: rgb(0, 50, 101);
+    background-color: rgb(77, 77, 77);
     padding-bottom: 30px;
     padding-top: 30px;
     color: white;
@@ -136,10 +136,18 @@ body {
 
 .studio-span {
     color: red;
+    font-weight: 550;
 }
 
-.gallery {
-    background-color: rgb(1, 69, 132);
+.gallery-studio {
+    background-color: rgb(88, 88, 88);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.gallery-coworkers {
+    background-color: rgb(55, 55, 55);
     padding-top: 30px;
     padding-bottom: 30px;
     color: white;
@@ -170,19 +178,16 @@ body {
     transform: scale(1.05);
 }
 
-.gallery-part-title {
+.gallery-link {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.gallery-part-title-wsp {
-    margin-top: 35px;
-    margin-bottom: 15px;
-}
-
 .gallery-link {
-    color: rgb(146, 146, 146);
+    color: white;
+    display: inline-block;
+    font-weight: 650;
 }
 
 .gallery-link:link, .gallery-link:visited, .gallery-link:active {
@@ -190,26 +195,27 @@ body {
 }
 
 .gallery-link:hover {
-    color: rgb(121, 121, 121);
+    color: rgb(222, 222, 222);
 }
 
 .signature {
     display: flex;
     justify-content: center;
+    padding-top: 7px;
     margin-bottom: 15px;
 }
 
 .filmography {
     padding-bottom: 30px;
     padding-top: 30px;
-    background-color: rgb(0, 50, 101);
+    background-color: rgb(77, 77, 77);
     color: white;
 }
 
 .filmography-title {
     width: 750px;
     height: 43px;
-    background:rgb(1, 69, 132);
+    background:rgb(60, 60, 60);
     border: 1px solid #CCCCCC;
     display: block;
 }
@@ -238,7 +244,7 @@ body {
 }
 
 .filmography-title:hover {
-background-color: rgb(9, 57, 102);
+background:rgb(45, 45, 45);
 cursor: pointer;
 }
 
@@ -252,7 +258,7 @@ padding-top: 17px;
 display: block;
 max-width: 750px;
 padding: 10px 0;
-background-color: rgb(9, 57, 102);
+background-color: rgb(60, 60, 60);
 }
 
 .filmography-title .filmography-type { 
@@ -272,6 +278,7 @@ margin-top: 10px;
 .filmography-nomination {
     color: red;
     list-style-type: none;
+    font-weight: 500;
 }
 
 .filmography-studio-type {
@@ -282,7 +289,7 @@ margin-top: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
     color: white; 
-    background-color: rgb(1, 69, 132);
+    background-color: rgb(88, 88, 88);
 }
 
 .contact-map {
@@ -321,7 +328,7 @@ margin-top: 10px;
     padding-bottom: 15px;
     color: white;
     text-align: center;
-    background-color: rgb(0, 50, 101);
+    background-color: rgb(44,44,44);
     font-size: 12px;   
 }
 
@@ -330,6 +337,11 @@ margin-top: 10px;
 }
 
 
+@media (min-width: 1200px) {
+    .gallery-link {
+        margin-left: 85px;
+    }
+}
 
 @media (min-width: 992px) {
     .contact-map {
@@ -350,8 +362,7 @@ margin-top: 10px;
     }
 }
 
-
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
         width: 680px;
     }    
@@ -361,19 +372,28 @@ margin-top: 10px;
         
     }
     
-    .gallery-part-title {
-        max-width: 760px;
+    .gallery-link {
+        max-width: 768px;
+    }
+
+    #logo {
+        margin-top: 5px;
+        width: 200px;
+    }
+
+    #nav-link-about, #nav-link-studio, #nav-link-gallery,#nav-link-coworkers, #nav-link-filmography, #nav-link-contact  {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }  
+
+    #nav-link-about{
+        width: 70px;
+        
     }
 }
 
-@media (max-width: 769px) {
-    #nav-link-about, #nav-link-studio, #nav-link-gallery, #nav-link-filmography, #nav-link-contact {
-      margin-left: 0;     
-}
-}
 
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .about-img-center {
         display: flex;
         justify-content: center;
@@ -387,9 +407,15 @@ margin-top: 10px;
     .contact-details {
         text-align: center;
     }
-
+    
     .nav-item:hover::after {
         width: 0;
+        
+    }
+
+    #nav-link-about:hover, #nav-link-studio:hover, #nav-link-gallery:hover,#nav-link-coworkers:hover, #nav-link-filmography:hover, #nav-link-contact:hover  {
+        
+        color:#dedede;
     }
 
     .contact-facebook {
@@ -419,8 +445,8 @@ margin-top: 10px;
         align-items: center;
     }
 
-    .gallery-part-title {
-        max-width: 480px;
+    .gallery-link {
+        margin-left: 15px;
     }
 
     #navbar-fullwidth {
@@ -446,12 +472,21 @@ margin-top: 10px;
         margin-right: 10px;
     }
 
+    #nav-link-about, #nav-link-studio, #nav-link-gallery,#nav-link-coworkers, #nav-link-filmography, #nav-link-contact  {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }  
+
+    #nav-link-about{
+        width: 100%;   
+    }
+
 }
 
 @media (max-width: 576px) {
     #logo {
         margin-right: 65px;
-        width: 200px;
+       
     }
 
     .home-paragraph {
@@ -474,9 +509,11 @@ margin-top: 10px;
         padding-top: 8px;
     }
     
-    .gallery-part-title {
-        max-width: 380px;
+    .gallery-link {
+       display: flex;
+       justify-content: center;
     }
+
 
 }
 
@@ -484,6 +521,10 @@ margin-top: 10px;
     .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
         width: 400px;
     }  
+
+    .about-headline, .studio-headline, .gallery-headline, .filmography-headline, .contact-headline {
+        font-size: 45px;
+    }
 
 }
 
@@ -504,8 +545,12 @@ margin-top: 10px;
         padding-top: 6px;
     }
 
-    .gallery-part-title {
+    .gallery-link {
         max-width: 310px;
+    }
+
+    .about-headline, .studio-headline, .gallery-headline, .filmography-headline, .contact-headline {
+        font-size: 42px;
     }
 
 }
@@ -514,12 +559,22 @@ margin-top: 10px;
     .contact-map {
         height: 280px;
     }
+
+    .about-headline, .studio-headline, .gallery-headline, .filmography-headline, .contact-headline {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 375px) {
         .filmography-title, .filmography-ul-container, .filmography-krzysztof, .filmography-studio {
             width: 300px;
         }  
+
+        .about-headline, .studio-headline, .gallery-headline, .filmography-headline, .contact-headline {
+            font-size: 37px;
+        }
+        
+        
 }
 
 
@@ -553,9 +608,10 @@ margin-top: 10px;
         padding-top: 5px;
     }
  
-     #logo {
+     #logo, .nav-link {
          margin-left: 10px;      
      }
+     
  
      #navbar-button {
          margin-right: -10px;
