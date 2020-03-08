@@ -10,10 +10,10 @@ body {
 
 .navbar {
   height: 80px;
-  background-color: #2c2c2c; }
+  background-color: black; }
 
 .navbar-nav {
-  background-color: #2c2c2c; }
+  background-color: black; }
 
 .menu-button {
   color: white; }
@@ -25,7 +25,7 @@ body {
   top: 100%;
   width: 0;
   height: 2px;
-  background-color: #6f6f6f;
+  background-color: #324158;
   transition: width 0.75s ease-in-out; }
 
 .nav-item:hover::after {
@@ -35,7 +35,7 @@ body {
   color: white; }
 
 .home {
-  background-color: #4d4d4d;
+  background-color: #1a1e24;
   padding-bottom: 20px; }
 
 .home-wrapper {
@@ -57,7 +57,7 @@ body {
   font-weight: 550; }
 
 .about {
-  background-color: #3c3c3c;
+  background-color: #324158;
   padding-top: 30px;
   color: white;
   padding-bottom: 30px; }
@@ -88,7 +88,7 @@ body {
   max-width: 300px; }
 
 .studio {
-  background-color: #4d4d4d;
+  background-color: #1a1e24;
   padding-bottom: 30px;
   padding-top: 30px;
   color: white; }
@@ -112,13 +112,13 @@ body {
   font-weight: 550; }
 
 .gallery-studio {
-  background-color: #585858;
+  background-color: #324158;
   padding-top: 30px;
   padding-bottom: 30px;
   color: white; }
 
 .gallery-coworkers {
-  background-color: #373737;
+  background-color: #324158;
   padding-top: 30px;
   padding-bottom: 30px;
   color: white; }
@@ -169,7 +169,7 @@ body {
 .filmography {
   padding-bottom: 30px;
   padding-top: 30px;
-  background-color: #4d4d4d;
+  background-color: #1a1e24;
   color: white; }
 
 .filmography-title {
@@ -235,7 +235,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   color: white;
-  background-color: #585858; }
+  background-color: #324158; }
 
 .contact-map {
   max-width: 500px;
